@@ -1,0 +1,3 @@
+These scripts are intended for use with segmentations from the ClearMap software package for vascular segmentation. A graph exported by ClearMap's TubeMap package is imported in run_graph_hemo.py, which converts the graph into a lumped parameter model input file for simulation of hemodynamics in the svZeroDSolver package from Simvascular. svZeroDSolver is required for running run_pysvzerod_test.py and can be installed from:
+https://github.com/SimVascular/svZeroDSolver
+These resulting .vtp file can be visualized in Paraview as a Legacy VTK file to see the pressure, flow, and wall shear stress throughout a vascular tree. graph_reduced_test.gt is an example input graph file.
